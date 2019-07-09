@@ -5,6 +5,11 @@ export const addTodo = (text)=>({
     text
 })
 
-// export const setVisibilitFilter = (filter) => ({
+export const toggleTodo = (index)=>{
+    return{
+        type:'TOGGLE_TODO',
+        index:index
+    }
+}
 
-// })
+

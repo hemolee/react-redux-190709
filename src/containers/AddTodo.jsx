@@ -5,7 +5,7 @@ import { addTodo } from '../actions'
 class AddTodo extends Component  {
  constructor(){
      super()    
-      this.state = { input : '' }  //아래 메소드에서  const input = this.input 선언해줘서 필요없어짐
+      this.state = { input : '' }  //아래 모든 메소드에서  const input = this.input 선언해주면 필요없어지는디 그럼 에러나서 다시 선언
     //  this.createTodo = this.createTodo.bind(this)  아래 메소드들을 arrowfunction으로 바꿔서 bind안해도됨
     //  this.inputNode = this.inputNode.bind(this)
  }
